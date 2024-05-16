@@ -1,0 +1,7 @@
+<div id="<%= dom_id post %>">
+  <h2><%= post.title %></h2>
+  <% if current_user %>
+    <p>Author: <%= post.user.email %></p>
+  <% end %>
+  <p><%= post.content %></p>
+</div>
